@@ -14,17 +14,17 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center animate-fade-up">
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
-            Advancing Healthcare Through Research Excellence
+            Avanzando en la Salud a través de la Excelencia en Investigación
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            We provide comprehensive research services to help healthcare organizations make informed decisions and improve patient outcomes.
+            Proporcionamos servicios integrales de investigación para ayudar a las organizaciones de salud a tomar decisiones informadas y mejorar los resultados de los pacientes.
           </p>
           <Button
             onClick={scrollToContact}
             size="lg"
             className="group"
           >
-            Get Started
+            Comenzar
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>

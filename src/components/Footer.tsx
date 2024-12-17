@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="text-center">
           <div className="text-xl font-semibold mb-4">HealthResearch</div>
           <p className="text-primary-foreground/80 text-sm">
-            © {currentYear} HealthResearch. All rights reserved.
+            © {currentYear} HealthResearch. Todos los derechos reservados.
           </p>
         </div>
       </div>

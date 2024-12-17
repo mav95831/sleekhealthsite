@@ -3,23 +3,23 @@ import { Microscope, ChartBar, Users, Brain } from "lucide-react";
 
 const services = [
   {
-    title: "Clinical Research",
-    description: "Expert guidance in designing and conducting clinical trials with the highest standards of quality and ethics.",
+    title: "Investigación Clínica",
+    description: "Orientación experta en el diseño y realización de ensayos clínicos con los más altos estándares de calidad y ética.",
     icon: Microscope
   },
   {
-    title: "Data Analysis",
-    description: "Advanced statistical analysis and interpretation of research data to derive meaningful insights.",
+    title: "Análisis de Datos",
+    description: "Análisis estadístico avanzado e interpretación de datos de investigación para obtener conclusiones significativas.",
     icon: ChartBar
   },
   {
-    title: "Patient Engagement",
-    description: "Strategies for effective patient recruitment and retention in clinical studies.",
+    title: "Participación del Paciente",
+    description: "Estrategias para el reclutamiento y retención efectiva de pacientes en estudios clínicos.",
     icon: Users
   },
   {
-    title: "Research Consulting",
-    description: "Strategic advice on research methodology, protocol development, and regulatory compliance.",
+    title: "Consultoría de Investigación",
+    description: "Asesoramiento estratégico sobre metodología de investigación, desarrollo de protocolos y cumplimiento normativo.",
     icon: Brain
   }
 ];
@@ -29,9 +29,9 @@ const Services = () => {
     <section id="services" className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-primary mb-4">Our Services</h2>
+          <h2 className="text-3xl font-bold text-primary mb-4">Nuestros Servicios</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Comprehensive research solutions tailored to your healthcare organization's needs
+            Soluciones integrales de investigación adaptadas a las necesidades de su organización de salud
           </p>
         </div>
 

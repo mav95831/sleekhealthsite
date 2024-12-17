@@ -13,6 +13,12 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const menuItems = {
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b">
       <div className="container mx-auto px-4">
@@ -21,13 +27,13 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {["services", "about", "contact"].map((item) => (
+            {Object.entries(menuItems).map(([id, label]) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item)}
-                className="text-gray-600 hover:text-primary transition-colors capitalize"
+                key={id}
+                onClick={() => scrollToSection(id)}
+                className="text-gray-600 hover:text-primary transition-colors"
               >
-                {item}
+                {label}
               </button>
             ))}
           </nav>
@@ -47,13 +53,13 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden py-4 border-t">
             <div className="flex flex-col space-y-4">
-              {["services", "about", "contact"].map((item) => (
+              {Object.entries(menuItems).map(([id, label]) => (
                 <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className="text-gray-600 hover:text-primary transition-colors capitalize py-2"
+                  key={id}
+                  onClick={() => scrollToSection(id)}
+                  className="text-gray-600 hover:text-primary transition-colors py-2"
                 >
-                  {item}
+                  {label}
                 </button>
               ))}
             </div>
