@@ -7,7 +7,6 @@ import { useToast } from "./ui/use-toast";
 const Contact = () => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
-  const [webhookUrl, setWebhookUrl] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,30 +26,13 @@ const Contact = () => {
       return;
     }
 
-    if (!webhookUrl) {
-      toast({
-        title: "Error",
-        description: "Por favor, ingrese la URL del webhook de Zapier",
-        variant: "destructive"
-      });
-      return;
-    }
-
     setIsLoading(true);
-    console.log("Enviando datos a Zapier:", webhookUrl);
 
     try {
-      const response = await fetch(webhookUrl, {
+      const form = e.target as HTMLFormElement;
+      await fetch("https://formsubmit.co/TU_EMAIL@AQUI.com", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        mode: "no-cors",
-        body: JSON.stringify({
-          ...formData,
-          timestamp: new Date().toISOString(),
-          origen: window.location.origin,
-        }),
+        body: new FormData(form)
       });
 
       toast({
@@ -60,6 +42,7 @@ const Contact = () => {
       
       // Resetear formulario
       setFormData({ name: "", email: "", message: "" });
+      form.reset();
     } catch (error) {
       console.error("Error al enviar el mensaje:", error);
       toast({
@@ -80,23 +63,12 @@ const Contact = () => {
           
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="webhookUrl" className="block text-sm font-medium text-gray-700 mb-1">
-                URL del Webhook de Zapier
-              </label>
-              <Input
-                id="webhookUrl"
-                value={webhookUrl}
-                onChange={(e) => setWebhookUrl(e.target.value)}
-                placeholder="Pegue aquí su URL de webhook de Zapier"
-              />
-            </div>
-
-            <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                 Nombre
               </label>
               <Input
                 id="name"
+                name="name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 placeholder="Tu nombre"
@@ -109,6 +81,7 @@ const Contact = () => {
               </label>
               <Input
                 id="email"
+                name="email"
                 type="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -122,6 +95,7 @@ const Contact = () => {
               </label>
               <Textarea
                 id="message"
+                name="message"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder="¿Cómo podemos ayudarte?"
