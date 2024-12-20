@@ -25,7 +25,14 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="text-xl font-semibold text-primary">HealthResearch</div>
+          <div className="flex items-center space-x-2">
+            <img 
+              src="/logo.png" 
+              alt="DataBrain Logo" 
+              className="h-10 w-10 object-contain"
+            />
+            <span className="text-xl font-semibold text-primary">DataBrain Asesores</span>
+          </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
