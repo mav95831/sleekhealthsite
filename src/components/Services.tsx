@@ -1,26 +1,55 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Microscope, ChartBar, Users, Brain } from "lucide-react";
+import { 
+  BookOpen, 
+  FileSpreadsheet, 
+  BarChart, 
+  FileText, 
+  GraduationCap, 
+  Search, 
+  PresentationChart, 
+  Settings 
+} from "lucide-react";
 
 const services = [
   {
-    title: "Investigación Clínica",
-    description: "Orientación experta en el diseño y realización de ensayos clínicos con los más altos estándares de calidad y ética.",
-    icon: Microscope
+    title: "Asesoría Integral",
+    description: "Guía experta desde la elección del tema hasta la publicación final de tu investigación.",
+    icon: BookOpen
+  },
+  {
+    title: "Desarrollo de Protocolos",
+    description: "Diseño metodológico riguroso y redacción profesional de protocolos de investigación.",
+    icon: FileSpreadsheet
   },
   {
     title: "Análisis de Datos",
-    description: "Análisis estadístico avanzado e interpretación de datos de investigación para obtener conclusiones significativas.",
-    icon: ChartBar
+    description: "Análisis estadístico avanzado e interpretación de resultados con software especializado.",
+    icon: BarChart
   },
   {
-    title: "Participación del Paciente",
-    description: "Estrategias para el reclutamiento y retención efectiva de pacientes en estudios clínicos.",
-    icon: Users
+    title: "Redacción Científica",
+    description: "Apoyo en la redacción y publicación de artículos en revistas indexadas.",
+    icon: FileText
   },
   {
-    title: "Consultoría de Investigación",
-    description: "Asesoramiento estratégico sobre metodología de investigación, desarrollo de protocolos y cumplimiento normativo.",
-    icon: Brain
+    title: "Formación",
+    description: "Cursos y talleres personalizados en metodología de investigación.",
+    icon: GraduationCap
+  },
+  {
+    title: "Revisiones Sistemáticas",
+    description: "Desarrollo de revisiones sistemáticas y meta-análisis con estándares internacionales.",
+    icon: Search
+  },
+  {
+    title: "Presentación",
+    description: "Diseño de materiales visuales y preparación para defensas de tesis.",
+    icon: PresentationChart
+  },
+  {
+    title: "Servicios Personalizados",
+    description: "Soluciones a medida para necesidades específicas de investigación.",
+    icon: Settings
   }
 ];
 
@@ -31,7 +60,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-primary mb-4">Nuestros Servicios</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Soluciones integrales de investigación adaptadas a las necesidades de su organización de salud
+            Soluciones integrales para cada etapa de tu investigación
           </p>
         </div>
 

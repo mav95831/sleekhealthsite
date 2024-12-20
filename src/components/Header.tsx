@@ -15,7 +15,9 @@ const Header = () => {
 
   const menuItems = {
     "services": "Servicios",
-    "about": "Nosotros",
+    "about": "Sobre Nosotros",
+    "testimonials": "Testimonios",
+    "portfolio": "Portafolio",
     "contact": "Contacto"
   };
 
