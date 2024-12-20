@@ -6,7 +6,7 @@ import {
   FileText, 
   GraduationCap, 
   Search, 
-  PresentationChart, 
+  Presentation, 
   Settings 
 } from "lucide-react";
 
@@ -44,7 +44,7 @@ const services = [
   {
     title: "Presentación",
     description: "Diseño de materiales visuales y preparación para defensas de tesis.",
-    icon: PresentationChart
+    icon: Presentation
   },
   {
     title: "Servicios Personalizados",
