@@ -12,43 +12,174 @@ import {
 
 const services = [
   {
-    title: "Asesoría Integral",
-    description: "Guía experta desde la elección del tema hasta la publicación final de tu investigación.",
+    title: "Asesoría Integral en Investigación",
+    description: (
+      <>
+        <p>Guía experta desde la elección del tema hasta la publicación final de tu investigación.</p>
+        <div className="mt-2">
+          <strong>Elección del Tema:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Ayuda en la identificación de temas relevantes y novedosos dentro de su especialidad.</li>
+            <li>Revisión de literatura para garantizar originalidad y relevancia clínica.</li>
+          </ul>
+        </div>
+        <div className="mt-2">
+          <strong>Planteamiento de la Pregunta de Investigación:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Uso de métodos como PICO para estructurar preguntas de investigación claras y precisas.</li>
+          </ul>
+        </div>
+      </>
+    ),
     icon: BookOpen
   },
   {
-    title: "Desarrollo de Protocolos",
-    description: "Diseño metodológico riguroso y redacción profesional de protocolos de investigación.",
+    title: "Desarrollo de Protocolos de Investigación",
+    description: (
+      <>
+        <p>Apoyo experto en la redacción y planeación del protocolo de investigación.</p>
+        <div className="mt-2">
+          <strong>Redacción del Protocolo:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Elaboración del marco teórico, objetivos, hipótesis y diseño metodológico.</li>
+          </ul>
+        </div>
+        <div className="mt-2">
+          <strong>Asesoría Ética:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Preparación de documentos para la aprobación del comité de ética.</li>
+          </ul>
+        </div>
+        <div className="mt-2">
+          <strong>Diseño Metodológico:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Selección de métodos estadísticos y herramientas de recolección de datos.</li>
+            <li>Elaboración de cronogramas y presupuestos ajustados al proyecto.</li>
+          </ul>
+        </div>
+      </>
+    ),
     icon: FileSpreadsheet
   },
   {
-    title: "Análisis de Datos",
-    description: "Análisis estadístico avanzado e interpretación de resultados con software especializado.",
+    title: "Recolección y Análisis de Datos",
+    description: (
+      <>
+        <div className="mt-2">
+          <strong>Diseño y Validación de Instrumentos:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Creación de encuestas, cuestionarios u otros instrumentos.</li>
+            <li>Validación de herramientas para garantizar precisión y validez.</li>
+          </ul>
+        </div>
+        <div className="mt-2">
+          <strong>Análisis Estadístico:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Procesamiento de datos con herramientas como SPSS, R o Python.</li>
+            <li>Generación de gráficos, tablas y análisis descriptivos e inferenciales.</li>
+          </ul>
+        </div>
+        <div className="mt-2">
+          <strong>Interpretación de Resultados:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Redacción de conclusiones basadas en los hallazgos obtenidos.</li>
+          </ul>
+        </div>
+      </>
+    ),
     icon: BarChart
   },
   {
-    title: "Redacción Científica",
-    description: "Apoyo en la redacción y publicación de artículos en revistas indexadas.",
+    title: "Redacción y Publicación de Artículos",
+    description: (
+      <>
+        <div className="mt-2">
+          <strong>Redacción Científica:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Estructuración y redacción de artículos siguiendo guías como Vancouver o APA.</li>
+            <li>Edición y revisión de manuscritos antes de enviarlos a revistas.</li>
+          </ul>
+        </div>
+        <div className="mt-2">
+          <strong>Asesoría para Publicación:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Identificación de revistas indexadas adecuadas para la publicación.</li>
+            <li>Preparación de manuscritos para cumplir con los requisitos editoriales.</li>
+          </ul>
+        </div>
+      </>
+    ),
     icon: FileText
   },
+  // {
+//     title: "Formación",
+//     description: "Cursos y talleres personalizados en metodología de investigación.",
+//     icon: GraduationCap
+//   },
   {
-    title: "Formación",
-    description: "Cursos y talleres personalizados en metodología de investigación.",
-    icon: GraduationCap
-  },
-  {
-    title: "Revisiones Sistemáticas",
-    description: "Desarrollo de revisiones sistemáticas y meta-análisis con estándares internacionales.",
+    title: "Asesoría en Revisiones Sistemáticas",
+    description: (
+      <>
+        <div className="mt-2">
+          <strong>Búsqueda Bibliográfica:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Apoyo en búsquedas en bases de datos como PubMed, Scopus o Embase.</li>
+          </ul>
+        </div>
+        <div className="mt-2">
+          <strong>Análisis Crítico de Estudios:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Evaluación de calidad y extracción de datos de los artículos incluidos.</li>
+          </ul>
+        </div>
+      </>
+    ),
     icon: Search
   },
   {
-    title: "Presentación",
-    description: "Diseño de materiales visuales y preparación para defensas de tesis.",
+    title: "Apoyo en la Presentación de Resultados",
+    description: (
+      <>
+        <div className="mt-2">
+          <strong>Diseño de Posters y Presentaciones:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Creación de materiales visuales para congresos y jornadas científicas.</li>
+          </ul>
+        </div>
+        <div className="mt-2">
+          <strong>Preparación para Defensas:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Simulacros de defensa y asesoría en presentación oral de investigaciones.</li>
+          </ul>
+        </div>
+      </>
+    ),
     icon: Presentation
   },
   {
     title: "Servicios Personalizados",
-    description: "Soluciones a medida para necesidades específicas de investigación.",
+    description: (
+      <>
+        <div className="mt-2">
+          <strong>Corrección y Edición:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Revisión de estilo, ortografía y formato de documentos científicos.</li>
+          </ul>
+        </div>
+        <div className="mt-2">
+          <strong>Consultoría por Etapas:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Asistencia en etapas específicas según las necesidades del investigador.</li>
+          </ul>
+        </div>
+        <div className="mt-2">
+          <strong>Mentoría a Largo Plazo:</strong>
+          <ul className="list-disc list-inside mt-1">
+            <li>Acompañamiento continuo durante el desarrollo de proyectos complejos.</li>
+          </ul>
+        </div>
+      </>
+    ),
     icon: Settings
   }
 ];

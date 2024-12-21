@@ -30,7 +30,7 @@ const Contact = () => {
 
     try {
       const form = e.target as HTMLFormElement;
-      await fetch("https://formsubmit.co/TU_EMAIL@AQUI.com", {
+      await fetch("https://formsubmit.co/mav95831@gmail.com", {
         method: "POST",
         body: new FormData(form)
       });
@@ -60,19 +60,19 @@ const Contact = () => {
       icon: MessageCircle,
       href: "https://wa.me/TU_NUMERO_AQUI",
       color: "text-green-500 hover:text-green-600"
-    },
-    {
-      name: "Facebook",
-      icon: Facebook,
-      href: "https://facebook.com/TU_PAGINA",
-      color: "text-blue-600 hover:text-blue-700"
-    },
-    {
-      name: "Twitter",
-      icon: Twitter,
-      href: "https://twitter.com/TU_USUARIO",
-      color: "text-blue-400 hover:text-blue-500"
     }
+    // {
+    //   name: "Facebook",
+    //   icon: Facebook,
+    //   href: "https://facebook.com/TU_PAGINA",
+    //   color: "text-blue-600 hover:text-blue-700"
+    // },
+    // {
+    //   name: "Twitter",
+    //   icon: Twitter,
+    //   href: "https://twitter.com/TU_USUARIO",
+    //   color: "text-blue-400 hover:text-blue-500"
+    // }
   ];
 
   return (

@@ -3,21 +3,21 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const testimonials = [
   {
-    name: "Dr. Carlos Rodríguez",
+    name: "Dr. Carlos R.",
     role: "Residente de Cirugía",
     text: "Su apoyo fue fundamental para publicar mi primer artículo en una revista indexada. El proceso fue claro y profesional.",
     image: "/placeholder.svg"
   },
   {
-    name: "Dra. Ana Martínez",
-    role: "Investigadora Principal",
+    name: "Dra. Ana M.",
+    role: "Residente de Imagenología",
     text: "La asesoría estadística que recibimos transformó completamente nuestro análisis de datos. Altamente recomendable.",
     image: "/placeholder.svg"
   },
   {
-    name: "Dr. Luis Sánchez",
+    name: "Dr. Luis S.",
     role: "Médico Especialista",
-    text: "Gracias a su guía, nuestro meta-análisis fue aceptado en una revista de alto impacto. Su experiencia marca la diferencia.",
+    text: "Gracias a su guía, nuestro revisión sistemática fue aceptado en una revista de indexada. Su experiencia marca la diferencia.",
     image: "/placeholder.svg"
   }
 ];

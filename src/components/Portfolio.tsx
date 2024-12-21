@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const projects = [
   {
-    title: "Meta-análisis en Cardiología",
+    title: "Revisión sistemática en Cardiología",
     description: "Revisión sistemática sobre nuevos tratamientos en insuficiencia cardíaca",
     journal: "Revista Española de Cardiología",
     year: "2023"
@@ -13,12 +13,12 @@ const projects = [
     journal: "Diabetes Care",
     year: "2022"
   },
-  {
-    title: "Investigación Clínica",
-    description: "Evaluación de nueva técnica quirúrgica en cirugía mínimamente invasiva",
-    journal: "Journal of Surgical Research",
-    year: "2023"
-  }
+  // {
+  //   title: "Investigación Clínica",
+  //   description: "Evaluación de nueva técnica quirúrgica en cirugía mínimamente invasiva",
+  //   journal: "Journal of Surgical Research",
+  //   year: "2023"
+  // }
 ];
 
 const Portfolio = () => {

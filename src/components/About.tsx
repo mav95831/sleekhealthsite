@@ -6,7 +6,7 @@ const About = () => {
           <h2 className="text-3xl font-bold text-primary mb-6 text-center">Sobre Nosotros</h2>
           <div className="prose prose-lg mx-auto text-gray-600">
             <p className="mb-6">
-              Con más de una década de experiencia en investigación interdisciplinaria, nuestro equipo combina experticia en ingeniería, economía y ciencias de la salud para ofrecer soluciones integrales en investigación médica.
+              Con más de una década de experiencia en investigación interdisciplinaria, nuestro equipo combina experticia en ciencias sociales y ciencias de la salud para ofrecer soluciones integrales en investigación médica.
             </p>
             <p className="mb-6">
               Nuestra filosofía se basa en tres pilares fundamentales:
@@ -20,8 +20,8 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             {[
-              ["500+", "Proyectos Completados"],
-              ["50+", "Publicaciones Indexadas"],
+              ["20+", "Proyectos Completados"],
+              ["30+", "Publicaciones Indexadas"],
               ["100%", "Satisfacción del Cliente"]
             ].map(([number, text], index) => (
               <div key={index} className="p-6 bg-white rounded-lg shadow-sm text-center">

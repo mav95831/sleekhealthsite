@@ -31,7 +31,8 @@ const Hero = () => {
           </div>
           <div className="hidden md:block">
             <img
-              src="/placeholder.svg"
+              // src="/placeholder.svg"
+              src="/abc.jpeg"
               alt="Investigación médica"
               className="rounded-lg shadow-xl"
               width={600}
